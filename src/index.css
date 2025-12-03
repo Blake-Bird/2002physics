@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Global tweaks */
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  @apply bg-space-900 text-slate-100 font-sans;
+}
+
+/* Custom slide styling */
+
+.slide-gradient-bg {
+  background: radial-gradient(circle at 20% 0%, #1d2440 0, #050814 50%, #020411 100%);
+}
+
+.card-glass {
+  background: linear-gradient(135deg, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.75));
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  backdrop-filter: blur(18px);
+  box-shadow: 0 0 40px rgba(15, 23, 42, 0.8);
+}
+
+/* Fake “oscillator ladder” + waves are drawn with simple utility classes in JSX */
